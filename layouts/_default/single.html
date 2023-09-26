@@ -1,0 +1,9 @@
+{{ define "title" }}
+{{- .Title -}}
+{{ end }}
+
+{{ define "main" }}
+  {{ "<!-- _default/single.html start -->" | safeHTML }}
+  {{ .Content }}
+  {{ "<!-- _default/single.html end -->" | safeHTML }}
+{{ end }}
